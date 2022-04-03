@@ -1,20 +1,14 @@
 
 #container {
-    flex-wrap: nowrap;
-    display: flex;
+    display: grid;
     justify-content: center;
 
 
 
 }
-.rblock{
+.gridCell{
     
     border-style: 5px groove purple;
-}
-.cblock {
-    width: 30px;
-    height:30px;
-    border: 1px solid black;
 }
 
 
