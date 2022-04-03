@@ -1,19 +1,20 @@
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
 
 #container {
-    flex-wrap: nowrap;
     display: flex;
     justify-content: center;
 
-
-
 }
 .rblock{
-    
-    border-style: 5px groove purple;
+    border-style: 1px groove purple;
 }
 .cblock {
-    width: 30px;
-    height:30px;
+    width: 35px;
+    height: 30px;
     border: 1px solid black;
 }
 
