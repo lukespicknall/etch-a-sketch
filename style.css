@@ -4,17 +4,16 @@
     justify-content: center;
     margin: 50px;
 }
-
-#container {
-    display: inline-grid;
-    box-sizing: border-box;
-
+.container{
+    display:flex;
+    justify-content: center;
 }
-.grid-item{
-    border: 1px solid gray;
-    width: 30px;
-    height: 30px;
-
-    padding: 0;
-    margin: 0;
+#sketchPad {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    gap: 0;
+}
+.cellBlock{
+    border: 1px solid black;
 }

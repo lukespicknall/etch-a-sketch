@@ -1,15 +1,17 @@
-const container = document.getElementById("container");
-let gridSize = 16;
+const sketchPad = document.getElementById("sketchPad");
+sketchPad.style.gridTemplateColumns = 'repeat(16, 1fr)'
+sketchPad.style.gridTemplateRows = 'repeat(16, 1fr)'
+//let gridSize = 16;
 
-
+createGrid();
 
 function createGrid() {
-    for(i = 0; i < (gridSize * gridSize); i++){
+    for(i = 0; i < 256; i++){
         let cell = document.createElement('div');
-        container.appendChild(cell).className = 'grid-item';
+        sketchPad.appendChild(cell).className = 'cellBlock';
     }
 }
-createGrid();
+
 //function makeRows(rowNum) {
 //    for (r = 0; r < rowNum; r++) {
 //        let row = document.createElement('div');
