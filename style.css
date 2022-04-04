@@ -1,23 +1,21 @@
 .buttonBox {
+    display:flex;
+    justify-content: center;
+    margin: 35px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+}
+#sketchPad {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 8px ridge;
+}
+
+.control{
     display: flex;
     justify-content: center;
-    margin: 40px;
 }
-
-#container {
-    display: flex;
-    justify-content: center;
-
-}
-.rblock{
-    border-style: 1px groove purple;
-}
-.cblock {
-    width: 35px;
-    height: 30px;
-    border: 1px solid black;
-}
-
-
-
- 
