@@ -45,7 +45,11 @@ reset.addEventListener('click', () => {
 })
 
 
-
+        //  **  this was to clear grid, but new grid creation essentially does that by deleting old grid  **  //
+        //let reset = document.querySelector('#reset')  
+        //reset.addEventListener('click', () => {
+        //cellBlock.style.background = 'transparent'
+        //});
 
 
 
