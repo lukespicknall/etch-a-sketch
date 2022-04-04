@@ -8,20 +8,26 @@ function createGrid(size) {
         let cell = document.createElement('div');
         sketchPad.appendChild(cell).className = 'cellBlock';
     }
-    changeColor()
+    toggleOn();
+
+
 }
 
 createGrid(60);
 
-//  **  Changes color on each cell on mouseover  **//
-function changeColor() {
-    let cellBlock = document.querySelectorAll('.cellBlock');
-    cellBlock.forEach(cellBlock => {
-        cellBlock.onmouseover = function () {
-            cellBlock.style.background = 'purple';
-        };
-    });
+//  **  Changes color on each cell on mouseover after click on container **//
+function toggleOn() {
+    sketchPad.onclick = function () {
+        let cellBlock = document.querySelectorAll('.cellBlock');
+        cellBlock.forEach(cellBlock => {
+            cellBlock.onmouseover = function () {
+                cellBlock.style.background = 'purple';
+            };
+        });
+    }
+    
 }
+
 
 //  **  Promtps new grid size, takes input, makes deciscion. ideally wipes old grid creates new if input is real number  **  //
 let reset = document.querySelector('#reset')
@@ -39,14 +45,15 @@ reset.addEventListener('click', () => {
         while (sketchPad.hasChildNodes()) {
             sketchPad.removeChild(sketchPad.firstChild);
         }
-    createGrid(newGrid);
-    changeColor();
+        createGrid(newGrid);
+        toggleOn();
+
     }
 })
 
 
         //  **  this was to clear grid, but new grid creation essentially does that by deleting old grid  **  //
-        //let reset = document.querySelector('#reset')  
+        //let reset = document.querySelector('#reset')
         //reset.addEventListener('click', () => {
         //cellBlock.style.background = 'transparent'
         //});

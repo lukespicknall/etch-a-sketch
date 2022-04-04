@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(204, 177, 247);
+}
 .buttonBox {
     display:flex;
     justify-content: center;
@@ -13,6 +16,7 @@
     height: 500px;
     display: grid;
     border: 8px ridge;
+    background-color: white;
 }
 
 .control{
