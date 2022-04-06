@@ -4,7 +4,11 @@ body{
 .buttonBox {
     display:flex;
     justify-content: center;
-    margin: 35px;
+    margin: 30px 0px 0px 0px;
+}
+h4{
+    display: flex;
+    justify-content: center;
 }
 .container{
     display:flex;
@@ -18,6 +22,7 @@ body{
     border: 8px ridge;
     background-color: white;
 }
+
 
 .control{
     display: flex;
